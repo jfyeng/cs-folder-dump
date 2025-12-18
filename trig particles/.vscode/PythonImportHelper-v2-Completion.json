@@ -1,0 +1,164 @@
+[
+    {
+        "label": "pygame,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame.",
+        "description": "pygame.",
+        "detail": "pygame.",
+        "documentation": {}
+    },
+    {
+        "label": "Particle",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Particle:\n    def __init__(self, x, y, speed, angle, size, color):\n        self.surf = pygame.Surface((size,size))\n        self.color = color\n        self.surf.fill(self.color)\n        self.opacity = 255\n        self.x, self.y = x, y\n        self.px, self.py = int(self.x), int(self.y)\n        self.size = size\n        self.speed = speed / SPEED_DIVISOR",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "WINDOW_SIZE",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "WINDOW_SIZE = (800,800)\nBURST_COUNT = 5 # how many particles to burst when clicked\nPARTICLE_SIZE_RANGE = (5,15) # randomly select particle size in given range\nSPEED_RANGE = (1,100) # randomly selects a speed in the given range\nSPEED_DIVISOR = 100 # divides the speed by this, useful for slower particles\nPARTICLE_OPACITY_DECREASE = 3 # how quickly a particle fades away, higher = shorter lifespan\nPARTICLE_LIFESPAN = -1 # how long particles can live, in frames. set to -1 to disable.\nPARTICLE_COLOR = (80, 180, 235) # set this to \"random\" for random, otherwise use a color like this: (0,0,0)\nSPAWN_INTERVAL = 0 # interval of spawn in ticks\nSAFE_ZONE = (0 - PARTICLE_SIZE_RANGE[1], WINDOW_SIZE[0] + PARTICLE_SIZE_RANGE[1]) # if the particles leave this area they DIE",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "BURST_COUNT",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "BURST_COUNT = 5 # how many particles to burst when clicked\nPARTICLE_SIZE_RANGE = (5,15) # randomly select particle size in given range\nSPEED_RANGE = (1,100) # randomly selects a speed in the given range\nSPEED_DIVISOR = 100 # divides the speed by this, useful for slower particles\nPARTICLE_OPACITY_DECREASE = 3 # how quickly a particle fades away, higher = shorter lifespan\nPARTICLE_LIFESPAN = -1 # how long particles can live, in frames. set to -1 to disable.\nPARTICLE_COLOR = (80, 180, 235) # set this to \"random\" for random, otherwise use a color like this: (0,0,0)\nSPAWN_INTERVAL = 0 # interval of spawn in ticks\nSAFE_ZONE = (0 - PARTICLE_SIZE_RANGE[1], WINDOW_SIZE[0] + PARTICLE_SIZE_RANGE[1]) # if the particles leave this area they DIE\nBACKGROUND_COLOR = (220,245,255)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "PARTICLE_SIZE_RANGE",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "PARTICLE_SIZE_RANGE = (5,15) # randomly select particle size in given range\nSPEED_RANGE = (1,100) # randomly selects a speed in the given range\nSPEED_DIVISOR = 100 # divides the speed by this, useful for slower particles\nPARTICLE_OPACITY_DECREASE = 3 # how quickly a particle fades away, higher = shorter lifespan\nPARTICLE_LIFESPAN = -1 # how long particles can live, in frames. set to -1 to disable.\nPARTICLE_COLOR = (80, 180, 235) # set this to \"random\" for random, otherwise use a color like this: (0,0,0)\nSPAWN_INTERVAL = 0 # interval of spawn in ticks\nSAFE_ZONE = (0 - PARTICLE_SIZE_RANGE[1], WINDOW_SIZE[0] + PARTICLE_SIZE_RANGE[1]) # if the particles leave this area they DIE\nBACKGROUND_COLOR = (220,245,255)\npygame.init()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "SPEED_RANGE",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "SPEED_RANGE = (1,100) # randomly selects a speed in the given range\nSPEED_DIVISOR = 100 # divides the speed by this, useful for slower particles\nPARTICLE_OPACITY_DECREASE = 3 # how quickly a particle fades away, higher = shorter lifespan\nPARTICLE_LIFESPAN = -1 # how long particles can live, in frames. set to -1 to disable.\nPARTICLE_COLOR = (80, 180, 235) # set this to \"random\" for random, otherwise use a color like this: (0,0,0)\nSPAWN_INTERVAL = 0 # interval of spawn in ticks\nSAFE_ZONE = (0 - PARTICLE_SIZE_RANGE[1], WINDOW_SIZE[0] + PARTICLE_SIZE_RANGE[1]) # if the particles leave this area they DIE\nBACKGROUND_COLOR = (220,245,255)\npygame.init()\npygame.display.set_caption(\"Trigonometry Particles\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "SPEED_DIVISOR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "SPEED_DIVISOR = 100 # divides the speed by this, useful for slower particles\nPARTICLE_OPACITY_DECREASE = 3 # how quickly a particle fades away, higher = shorter lifespan\nPARTICLE_LIFESPAN = -1 # how long particles can live, in frames. set to -1 to disable.\nPARTICLE_COLOR = (80, 180, 235) # set this to \"random\" for random, otherwise use a color like this: (0,0,0)\nSPAWN_INTERVAL = 0 # interval of spawn in ticks\nSAFE_ZONE = (0 - PARTICLE_SIZE_RANGE[1], WINDOW_SIZE[0] + PARTICLE_SIZE_RANGE[1]) # if the particles leave this area they DIE\nBACKGROUND_COLOR = (220,245,255)\npygame.init()\npygame.display.set_caption(\"Trigonometry Particles\")\ndisplay = pygame.display.set_mode(WINDOW_SIZE)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "PARTICLE_OPACITY_DECREASE",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "PARTICLE_OPACITY_DECREASE = 3 # how quickly a particle fades away, higher = shorter lifespan\nPARTICLE_LIFESPAN = -1 # how long particles can live, in frames. set to -1 to disable.\nPARTICLE_COLOR = (80, 180, 235) # set this to \"random\" for random, otherwise use a color like this: (0,0,0)\nSPAWN_INTERVAL = 0 # interval of spawn in ticks\nSAFE_ZONE = (0 - PARTICLE_SIZE_RANGE[1], WINDOW_SIZE[0] + PARTICLE_SIZE_RANGE[1]) # if the particles leave this area they DIE\nBACKGROUND_COLOR = (220,245,255)\npygame.init()\npygame.display.set_caption(\"Trigonometry Particles\")\ndisplay = pygame.display.set_mode(WINDOW_SIZE)\nclock = pygame.time.Clock()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "PARTICLE_LIFESPAN",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "PARTICLE_LIFESPAN = -1 # how long particles can live, in frames. set to -1 to disable.\nPARTICLE_COLOR = (80, 180, 235) # set this to \"random\" for random, otherwise use a color like this: (0,0,0)\nSPAWN_INTERVAL = 0 # interval of spawn in ticks\nSAFE_ZONE = (0 - PARTICLE_SIZE_RANGE[1], WINDOW_SIZE[0] + PARTICLE_SIZE_RANGE[1]) # if the particles leave this area they DIE\nBACKGROUND_COLOR = (220,245,255)\npygame.init()\npygame.display.set_caption(\"Trigonometry Particles\")\ndisplay = pygame.display.set_mode(WINDOW_SIZE)\nclock = pygame.time.Clock()\nclass Particle:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "PARTICLE_COLOR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "PARTICLE_COLOR = (80, 180, 235) # set this to \"random\" for random, otherwise use a color like this: (0,0,0)\nSPAWN_INTERVAL = 0 # interval of spawn in ticks\nSAFE_ZONE = (0 - PARTICLE_SIZE_RANGE[1], WINDOW_SIZE[0] + PARTICLE_SIZE_RANGE[1]) # if the particles leave this area they DIE\nBACKGROUND_COLOR = (220,245,255)\npygame.init()\npygame.display.set_caption(\"Trigonometry Particles\")\ndisplay = pygame.display.set_mode(WINDOW_SIZE)\nclock = pygame.time.Clock()\nclass Particle:\n    def __init__(self, x, y, speed, angle, size, color):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "SPAWN_INTERVAL",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "SPAWN_INTERVAL = 0 # interval of spawn in ticks\nSAFE_ZONE = (0 - PARTICLE_SIZE_RANGE[1], WINDOW_SIZE[0] + PARTICLE_SIZE_RANGE[1]) # if the particles leave this area they DIE\nBACKGROUND_COLOR = (220,245,255)\npygame.init()\npygame.display.set_caption(\"Trigonometry Particles\")\ndisplay = pygame.display.set_mode(WINDOW_SIZE)\nclock = pygame.time.Clock()\nclass Particle:\n    def __init__(self, x, y, speed, angle, size, color):\n        self.surf = pygame.Surface((size,size))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "SAFE_ZONE",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "SAFE_ZONE = (0 - PARTICLE_SIZE_RANGE[1], WINDOW_SIZE[0] + PARTICLE_SIZE_RANGE[1]) # if the particles leave this area they DIE\nBACKGROUND_COLOR = (220,245,255)\npygame.init()\npygame.display.set_caption(\"Trigonometry Particles\")\ndisplay = pygame.display.set_mode(WINDOW_SIZE)\nclock = pygame.time.Clock()\nclass Particle:\n    def __init__(self, x, y, speed, angle, size, color):\n        self.surf = pygame.Surface((size,size))\n        self.color = color",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "BACKGROUND_COLOR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "BACKGROUND_COLOR = (220,245,255)\npygame.init()\npygame.display.set_caption(\"Trigonometry Particles\")\ndisplay = pygame.display.set_mode(WINDOW_SIZE)\nclock = pygame.time.Clock()\nclass Particle:\n    def __init__(self, x, y, speed, angle, size, color):\n        self.surf = pygame.Surface((size,size))\n        self.color = color\n        self.surf.fill(self.color)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "display",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "display = pygame.display.set_mode(WINDOW_SIZE)\nclock = pygame.time.Clock()\nclass Particle:\n    def __init__(self, x, y, speed, angle, size, color):\n        self.surf = pygame.Surface((size,size))\n        self.color = color\n        self.surf.fill(self.color)\n        self.opacity = 255\n        self.x, self.y = x, y\n        self.px, self.py = int(self.x), int(self.y)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "clock",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "clock = pygame.time.Clock()\nclass Particle:\n    def __init__(self, x, y, speed, angle, size, color):\n        self.surf = pygame.Surface((size,size))\n        self.color = color\n        self.surf.fill(self.color)\n        self.opacity = 255\n        self.x, self.y = x, y\n        self.px, self.py = int(self.x), int(self.y)\n        self.size = size",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "particles",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "particles = []\nclicking = False\nlast_spawn = 0\nwhile True:\n    display.fill(BACKGROUND_COLOR)\n    for particle in particles:\n        if particle.update() == \"done\":\n            particles.remove(particle)\n        particle.render(display)\n    if clicking:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "clicking",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "clicking = False\nlast_spawn = 0\nwhile True:\n    display.fill(BACKGROUND_COLOR)\n    for particle in particles:\n        if particle.update() == \"done\":\n            particles.remove(particle)\n        particle.render(display)\n    if clicking:\n        now = pygame.time.get_ticks()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "last_spawn",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "last_spawn = 0\nwhile True:\n    display.fill(BACKGROUND_COLOR)\n    for particle in particles:\n        if particle.update() == \"done\":\n            particles.remove(particle)\n        particle.render(display)\n    if clicking:\n        now = pygame.time.get_ticks()\n        if now - last_spawn >= SPAWN_INTERVAL:",
+        "detail": "main",
+        "documentation": {}
+    }
+]
